@@ -1,0 +1,22 @@
+body{
+    font-family: 'Lato', sans-serif, 'Roboto Mono', monospace;
+}
+img{
+    vertical-align: middle;
+    width: 40px;
+}
+span{
+    vertical-align: middle;
+}
+/* *{
+    outline:2px solid red;
+} */
+.green-bar{
+    width:4px;
+    background-color: #198754;
+    color:#198754;
+
+}
+.logo{
+    width:152px;
+}
