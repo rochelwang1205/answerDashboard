@@ -12,39 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex">
-    <div class="sidebar w-25 gray-100 bg-light px-5 py-5 d-flex flex-column justify-content-between">
+    <div class="sidebar w-25 gray-100 bg-light py-4 d-flex flex-column justify-content-between">
         <div>
-        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg" alt="logo" class="logo mb-4"></a>
+        <a href="#" class="d-block px-5"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg" alt="logo" class="logo mb-4"></a>
         <ul class="pages list-unstyled fs-5">
-            <li class="mb-3"><span class="material-symbols-outlined me-4">
+            <li class="mb-3 ps-5 pe-7"><span class="material-symbols-outlined me-4">
                 insert_chart
                 </span>Dashboard</li>
-            <li class="mb-3"><span class="material-symbols-outlined me-4">
+            <li class="mb-3 ps-5 pe-7"><span class="material-symbols-outlined me-4">
                 forum
                 </span>Question</li>
-            <li class="text-success mb-3 d-flex"><div class="green-bar position-relative top-50 start-0"></div><span class="material-symbols-outlined me-4">
+            <li class="mb-3 ps-5 pe-7 active"><a href="#" class="text-success"><span class="material-symbols-outlined me-4">
                 assignment
-                </span>Assignment</li>
-            <li class="mb-3"><span class="material-symbols-outlined me-4">
+                </span>Assignment</a></li>
+            <li class="mb-3 ps-5 pe-7"><span class="material-symbols-outlined me-4">
                 video_library
                 </span>Course</li>
-            <li class="mb-3"><span class="material-symbols-outlined me-4">
-                group
-                </span>Admin</li>
-            <li><span class="material-symbols-outlined me-4">
+            <li class="mb-3 ps-5 pe-7"><a href="./admin.html" class="text-dark"><span class="material-symbols-outlined me-4">
+                    group
+                </span>Admin</a></li>
+            <li class="mb-3 ps-5 pe-7"><span class="material-symbols-outlined me-4">
                 settings
                 </span>Settings</li>
         </ul>
         </div>
-        <div class="userinfo d-flex align-items-center">
-            <img src="images/andychen.jpeg" alt="andy chen's photo" class="rounded-circle">
+        <div class="px-5 userinfo d-flex align-items-center">
+            <img src="images/andychen.jpeg" alt="andy chen's photo" class="rounded-circle me-3">
             <div class="info d-flex flex-column justify-content-center">
                 <p class="fs-5 mb-0">Andy Chen</p>
                 <p class="fs-6 mb-0">andy0401@mail.com</p>
             </div>
         </div>    
     </div>
-    <main class="px-5 py-5">
+    <main class="px-5 py-5 pb-0">
         <div class="header d-flex justify-content-between align-items-center">
             <div class="topic d-flex align-items-center">
             <h1 class="fs-3">Assignment</h1>
@@ -84,74 +84,78 @@
                     </ul>
                 </div>
         </div>
-        <div class="card ms-3">
-            <div class="card-body card-header d-flex justify-content-between align-items-center">
-                <div>
-                <h5 class="card-title fs-6">Chapter Assignment 2 / HTML&CSS</h5>
-                <h3 class="card-title fs-5">Please check this file for me, thanks!</h3>
-                </div>
-                <span class="material-symbols-outlined">
-                    more_vert
-                </span>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item py-3">
-                    <div class="d-flex">
-                        <div class="photo me-2">
-                            <img src="images/emilywang.jpeg" alt="emaily wang" class="rounded-circle">
-                        </div>
-                        <div class="context">
-                            <h4>Emily Wang</h4>
-                            <span>10:38 AM (4 hours ago)</span>
-                            <p class="my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span>? There is a gap below the image, but it doesn’t seem to be a padding/margin. What is the gap or extra space below image?</p>
-                            <button type="button" class="btn btn-light d-flex align-items-center justify-content-center">
-                        <span class="material-symbols-outlined">
-                            attach_file
-                        </span>
-                        HW-2-David.zip
-                    </button>
-                        </div>
+        <div class="d-flex flex-column justify-content-between">
+            <div class="card ms-3">
+                <div class="card-body card-header d-flex justify-content-between align-items-center">
+                    <div>
+                    <h5 class="card-title fs-6">Chapter Assignment 2 / HTML&CSS</h5>
+                    <h3 class="card-title fs-5">Please check this file for me, thanks!</h3>
                     </div>
-                </li>
-                <li class="list-group-item py-3">
-                    <div class="d-flex">
-                        <div class="photo me-2">
-                            <img src="images/andychen.jpeg" alt="Andy Chen" class="rounded-circle">
-                        </div>
-                        <div class="context">
-                            <div class="userbar d-flex justify-content-between">
-                                <h4>Andy Chen (You)</h4>
-                                <div class="edit">
-                                    <span class="material-symbols-outlined">
-                                        star
-                                    </span>
-                                    <span class="material-symbols-outlined">
-                                        edit
-                                    </span>
-                                </div>
-                            </div>
-                            <span>13:24 AM (1 hours ago)</span>
-                            <p class="my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can: <br><br>　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span>) or <br>　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        </div>
-        <footer class="d-flex justify-content-center align-items-center">
-            <div class="arrow">
-                <span class="material-symbols-outlined">
-                    chevron_left
-                    </span>
                     <span class="material-symbols-outlined">
-                        chevron_right
+                        more_vert
+                    </span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item py-3">
+                        <div class="d-flex">
+                            <div class="photo me-2">
+                                <img src="images/emilywang.jpeg" alt="emaily wang" class="rounded-circle">
+                            </div>
+                            <div class="context">
+                                <h4>Emily Wang</h4>
+                                <span>10:38 AM (4 hours ago)</span>
+                                <p class="my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light px-1">div</span> is bigger than the height of the <span class="text-success bg-light px-1">img</span>? There is a gap below the image, but it doesn’t seem to be a padding/margin. What is the gap or extra space below image?</p>
+                                <button type="button" class="btn btn-light d-flex align-items-center justify-content-center">
+                            <span class="material-symbols-outlined">
+                                attach_file
+                            </span>
+                            HW-2-David.zip
+                        </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item py-3">
+                        <div class="d-flex">
+                            <div class="photo me-2">
+                                <img src="images/andychen.jpeg" alt="Andy Chen" class="rounded-circle">
+                            </div>
+                            <div class="context">
+                                <div class="userbar d-flex justify-content-between">
+                                    <h4>Andy Chen (You)</h4>
+                                    <div class="edit">
+                                        <span class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined">
+                                            edit
+                                        </span>
+                                    </div>
+                                </div>
+                                <span>13:24 AM (1 hours ago)</span>
+                                <p class="my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can: <br><br>　• adjust the <span class="text-success bg-light px-1">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success bg-light px-1">middle</span>) or <br>　• change the <span class="text-success bg-light px-1">display</span> so it isn’t inline.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="arrow">
+                    <span class="material-symbols-outlined">
+                        chevron_left
                         </span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                            </span>
+                </div>
+                <div class="btn my-3">
+                    <button class="btn btn-outline-success px-4">Mark as read</button>
+                    <button type="button" class="btn btn-success px-4">Reply</button>
+                </div>
             </div>
-            <div class="btn my-3">
-                <button class="btn btn-outline-success px-4">Mark as read</button>
-                <button type="button" class="btn btn-success px-4">Reply</button>
-            </div>
-        </footer>
+        </div>
+        </div>
+       
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
